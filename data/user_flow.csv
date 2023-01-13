@@ -1,0 +1,16 @@
+﻿source,target,value,index_s,index_t,line_color
+SNS,Activation,430,0,3,lightgray
+Offline,Activation,400,1,3,lightgray
+etc,Activation,500,2,3,lightgray
+Activation,Home,130,3,4,lightgray
+Activation,Best,230,3,5,lightgray
+Activation,New,280,3,6,lightgray
+Activation,Category,180,3,7,lightgray
+Activation,Search,250,3,8,lightgray
+Home,Cart,100,4,9,lightgray
+Best,Cart,200,5,9,lightgray
+New,Cart,240,6,9,lightgray
+Category,Cart,150,7,9,lightgray
+Search,Cart,200,8,9,lightgray
+Cart,Purchase,500,9,10,lightgray
+Purchase,Repurchase,150,10,11,lightgray
