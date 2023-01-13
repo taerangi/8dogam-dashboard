@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import custom_fig2
+import custom_fig
 from dash import Dash, html, dcc, dependencies
 from dash_svg import Svg, G, Path, Circle
 import pandas as pd
@@ -80,7 +80,7 @@ contents = {
                     html.Div(
                         html.Div([
                             html.Div(
-                                dcc.Graph(figure=custom_fig2.main_overview(), className="fig")
+                                dcc.Graph(figure=custom_fig.main_overview(), className="fig")
                             , id="overview-2-1"),
                             html.Div(
                                 html.Div([
@@ -164,12 +164,12 @@ contents = {
                 html.Div([
                     html.Div(
                         html.Div(
-                            dcc.Graph(figure=custom_fig2.main_user_1(), className="fig")
+                            dcc.Graph(figure=custom_fig.main_user_1(), className="fig")
                         , id="main-user-left-wrapper")
                     , id="main-user-left", className="card"),
                     html.Div(
                         html.Div(
-                            dcc.Graph(figure=custom_fig2.main_user_2(), id="main-user-right-fig")
+                            dcc.Graph(figure=custom_fig.main_user_2(), id="main-user-right-fig")
                         ,id="main-user-right-wrapper")
                     , id="main-user-right", className="card")
                 ], id="main-user-content")
@@ -197,7 +197,7 @@ contents = {
                                 , id="response-1-2"),
                                 html.Div("(1,000 based)", id="response-1-3"),
                                 html.Div(
-                                    dcc.Graph(figure=custom_fig2.main_response_1(), className="fig")    
+                                    dcc.Graph(figure=custom_fig.main_response_1(), className="fig")    
                                 , id="response-1-4")
                             ], id="response-1-wrapper")
                         ], id="response-1"),
@@ -205,7 +205,7 @@ contents = {
                             html.H5('Repurchase Rate', className="response-title"),
                             html.Div([
                                 html.Div(
-                                    dcc.Graph(figure=custom_fig2.main_response_2(), className="fig")
+                                    dcc.Graph(figure=custom_fig.main_response_2(), className="fig")
                                 , id="response-2-1"),
                                 html.Div("(1,700 based)", id="response-2-2")
                             ], id="response-2-wrapper")
@@ -213,7 +213,7 @@ contents = {
                         html.Div([
                             html.H5('NPS', className="response-title"),
                             html.Div([
-                                dcc.Graph(figure=custom_fig2.main_response_3(), className="fig"),
+                                dcc.Graph(figure=custom_fig.main_response_3(), className="fig"),
                                 html.Div("(1,000 based / 2022 Dec)", id="response-3-2")
                             ], className="response-n-wrapper")
                         ], id="response-3")
@@ -228,7 +228,7 @@ contents = {
             html.Div([
                 html.H4("User Status", className="main-title"),
                 html.Div(
-                    dcc.Graph(figure=custom_fig2.user_status(), id="user-status-fig")
+                    dcc.Graph(figure=custom_fig.user_status(), id="user-status-fig")
                 , className="user-content card")
             ], id="user-status-wrapper")
         , id="user-status"),
@@ -237,7 +237,7 @@ contents = {
                 html.H4("User Retention", className="main-title"),
                 html.Div(
                     html.Div(
-                        dcc.Graph(figure=custom_fig2.user_retention(), className="fig")
+                        dcc.Graph(figure=custom_fig.user_retention(), className="fig")
                     , className="fig-wrapper")
                 , className="user-content card")
             ], id="user-retention-wrapper")
@@ -247,7 +247,7 @@ contents = {
                 html.H4("User Flow", className="main-title"),
                 html.Div(
                     html.Div(
-                        dcc.Graph(figure=custom_fig2.user_flow(), className="fig")
+                        dcc.Graph(figure=custom_fig.user_flow(), className="fig")
                     , className="fig-wrapper")
                 , className="user-content card")
             ], id="user-flow-wrapper")
@@ -296,7 +296,7 @@ contents = {
                         ], className="persona-3"),
                         html.Div([
                             html.H5("Purchase History by Category", className="persona-4-1 persona-title"),
-                            dcc.Graph(figure=custom_fig2.user_persona(), className="persona-4-2")
+                            dcc.Graph(figure=custom_fig.user_persona(), className="persona-4-2")
                         ], className="persona-4"),
                     ], id="persona-content-wrapper")
                 , className="user-content card")
@@ -310,7 +310,7 @@ contents = {
                 html.H4("10 Best-Selling Products", className="main-title"),
                 html.Div(
                     html.Div(
-                        dcc.Graph(figure=custom_fig2.product_top10(), className="fig")
+                        dcc.Graph(figure=custom_fig.product_top10(), className="fig")
                     , className="fig-wrapper")
                 , className="card user-content")
             ], id="product-top10-wrapper")
@@ -320,7 +320,7 @@ contents = {
                 html.H4("Sales by Category", className="main-title"),
                 html.Div(
                     html.Div(
-                        dcc.Graph(figure=custom_fig2.product_category(), className="fig")
+                        dcc.Graph(figure=custom_fig.product_category(), className="fig")
                     , className="fig-wrapper")
                 , className="card user-content")
             ], id="product-category-wrapper")
@@ -362,7 +362,7 @@ contents = {
                                     , id="response-1-2"),
                                     html.Div("(2,000 based)", id="response-1-3"),
                                     html.Div(
-                                        dcc.Graph(figure=custom_fig2.product_detail_review(), className="fig")    
+                                        dcc.Graph(figure=custom_fig.product_detail_review(), className="fig")    
                                     , id="response-1-4")
                                 ], id="product-detail-2-2-1")
                             ], id="product-detail-2-2"),
@@ -371,14 +371,14 @@ contents = {
                             , id="product-detail-2-3"),
                             html.Div([
                                 html.H5("Repurchase", id="product-detail-2-4-1"),   
-                                dcc.Graph(figure=custom_fig2.product_detail_repurchase(), id="product-detail-2-4-2")
+                                dcc.Graph(figure=custom_fig.product_detail_repurchase(), id="product-detail-2-4-2")
                             ], id="product-detail-2-4"),
                             html.Div([
                                 html.H5("Sales", id="product-detail-2-5-1"),
-                                dcc.Graph(figure=custom_fig2.product_detail_sales(), id="product-detail-2-5-2")
+                                dcc.Graph(figure=custom_fig.product_detail_sales(), id="product-detail-2-5-2")
                             ], id="product-detail-2-5"),
                             html.Div(
-                                dcc.Graph(figure=custom_fig2.product_network(), className="fig")
+                                dcc.Graph(figure=custom_fig.product_network(), className="fig")
                             , id="product-detail-2-6")
                         ], id="product-detail-2"),
                         html.Div(id="product-detail-line")
