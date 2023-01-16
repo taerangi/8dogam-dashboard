@@ -32,7 +32,7 @@ contents = {
                                 html.Div("8,800,000", className="overview-1-n-mid-2")
                             ], className="overview-1-n-mid"),
                             html.Div(
-                                html.Div("+11.1%", className="overview-inde increase")
+                                html.Div("+10.0%", className="overview-inde increase")
                             , className="overview-1-n-right")
                         ], className="overview-1-n-wrapper")
                     , id="overview-1-1", className="card"),
