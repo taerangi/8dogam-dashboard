@@ -202,7 +202,7 @@ contents = {
                             ], id="response-1-wrapper")
                         ], id="response-1"),
                         html.Div([
-                            html.H5('Repurchase Rate', className="response-title"),
+                            html.H5('Repurchase', className="response-title"),
                             html.Div([
                                 html.Div(
                                     dcc.Graph(figure=custom_fig.main_response_2(), className="fig")
