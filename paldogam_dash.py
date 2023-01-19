@@ -389,7 +389,7 @@ contents = {
     ], id="content-product-wrapper")
 }
 
-app = Dash(__name__, title="Paldogam Business Dashboard", assets_external_path=".")
+app = Dash(__name__, title="8dogam Business Dashboard", assets_external_path=".")
 server = app.server
 
 app.layout = html.Div([
@@ -398,7 +398,7 @@ app.layout = html.Div([
     , id="logo"),
 
     html.Header([
-        html.H3("Paldogam Business Dashboard", id="header-text"),
+        html.H3("8dogam Business Dashboard", id="header-text"),
         # html.P("by 태랑", id="header-made-by")
     ], id="header"),
 
