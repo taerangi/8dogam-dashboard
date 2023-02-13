@@ -1,1 +1,1 @@
-web: gunicorn paldogam_dash:server
+web: gunicorn dashboard:server
