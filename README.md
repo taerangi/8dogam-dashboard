@@ -1,10 +1,9 @@
-## 8dogam Business Dashboard
+## Business Dashboard
 
 포트폴리오용으로 제작한 대시보드입니다.
-
-(대시보드 내에 표시된 데이터 수치는 임의로 작성된 것입니다.)
-
-[https://taerang-dash.herokuapp.com](https://taerang-dash.herokuapp.com)
+- 비즈니스: e-commerce
+- 데이터: 임의의 수치 기입
+- 링크: [https://taerang-dash.herokuapp.com](https://taerang-dash.herokuapp.com)
 
 ![슬라이드5](https://user-images.githubusercontent.com/60762935/213430907-efe6e1dc-56c2-4c0e-af48-9de18125a2a6.jpeg)
 ![슬라이드6](https://user-images.githubusercontent.com/60762935/213430911-4d8fe5fe-66b1-46d6-ae80-c19b80b784b9.jpeg)
